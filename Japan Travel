@@ -68,6 +68,7 @@
         border-radius: 10px;
         display: block;
         margin: auto;
+        box-shadow: 0px 0px 20px pink;
       }
       .japan-intro-pic {
         border-radius: 10px;
