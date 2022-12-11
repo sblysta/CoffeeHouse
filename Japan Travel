@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traveling to Japan</title>
+    <style>
+      body {
+        color: white;
+        background: linear-gradient(
+            rgba(31, 30, 30, 0.7),
+            rgba(31, 30, 30, 0.7)
+          ),
+          url(https://media.cntraveler.com/photos/56e9aa4144770bed78864d9e/1:1/w_1536,h_1536,c_limit/NAKAMEGURO-japan-cherry-blossom-cr-getty.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+      }
+      h1 {
+        color: rgb(221, 130, 145);
+        font-size: 30px;
+        font-weight: normal;
+      }
+      h2 {
+        color: rgb(221, 130, 145);
+        font-size: 20px;
+        font-weight: normal;
+      }
+      img {
+        max-width: 100%;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        color: black;
+      }
+      button {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid rgb(221, 130, 145);
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+        font-size: 14px;
+        border-radius: 6px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: rgb(221, 130, 145);
+        color: black;
+      }
+      footer {
+        padding: 20px;
+      }
+      a {
+        color: rgb(221, 130, 145);
+      }
+      a:hover {
+        color: aqua;
+      }
+      .container {
+        max-width: 600px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+      }
+      .japan-intro-pic {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .japan-intro-pic:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        margin: 15px 0;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(1.2);
+      }
+      .dark .container {
+        background: rgb(37, 35, 35);
+      }
+      .dark h1,
+      a {
+        color: rgba(0, 255, 255, 0.724);
+      }
+      .dark button {
+        border: 2px solid aqua;
+      }
+      .dark p {
+        color: white;
+      }
+      .dark h2 {
+        color: rgba(0, 255, 255, 0.724);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Traveling to Japan</h1>
+      <h2>Why you should go too</h2>
+      <a href="https://www.japan.travel/en/things-to-do/" target="_blank">
+        <img
+          src="https://www.neverendingvoyage.com/wp-content/uploads/2019/09/kyoto-japan-26.jpg"
+          alt=""
+          class="japan-intro-pic"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2021/02/Kyoto-Japan-old-town-streets-in-the-Higashiyama-district@3x-1024x683.jpg"
+          alt=""
+        />
+        <img
+          src="https://a3.cdn.japantravel.com/photo/68104-226822/1440x960!/kyoto-kyoto-color-guide-226822.jpg"
+          alt=""
+        />
+        <img
+          src="https://www.japanrailpass.com.au/wp-content/uploads/2017/08/Red-Tori-Gate-at-Fushimi-Inari-Shrine-in-Kyoto-Japan.jpg"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dG9reW98ZW58MHx8MHx8&w=1000&q=80"
+          alt=""
+        />
+      </div>
+      <p>
+        Japan is one of the oldest civilizations and has a beautiful and diverse
+        history. The stunning, diverse scenery with mountains and breathtaking
+        views, which are much appreciated by the Japanese, offers so many
+        different experiences that attract tourists from all corners of the
+        world.
+      </p>
+    </div>
+    <footer>
+      🌸 Coded by
+      <a
+        href="https://www.shecodes.io/graduates/65213-sarah-blystone"
+        target="_blank"
+        >Sarah Blystone
+      </a>
+      🌸
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
